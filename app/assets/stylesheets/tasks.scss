@@ -1,0 +1,41 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.center-align {
+  text-align: center
+}
+
+.left-align {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+  padding-right: 20px
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+.edit_form {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.label {
+  width: 100px;
+  }
+
+.box {
+  padding: 10px 0px;
+  display: flex;
+}
+
+.submit {
+  width: 100%
+}
+

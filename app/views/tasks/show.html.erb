@@ -1,0 +1,15 @@
+
+<div class = "container">
+  <div class = "center-align">
+    <h1><%= @task.title %></h1>
+  </div>
+  <div class = "left-align">
+    <h2><%= @task.details %></h2>
+    <h3><%= @task.completed ? 'Complete!' : 'In Progress' %></h3>
+  </div>
+  <div class="right-align links">
+    <%= link_to "Home", tasks_path %>
+    <%= link_to "Edit",  edit_task_path(@task) %>
+    <%= link_to "Delete",  task_path(@task), method: :delete%>
+  </div>
+</div>

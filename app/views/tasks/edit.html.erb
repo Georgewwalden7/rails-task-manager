@@ -1,0 +1,23 @@
+<div class = "center-align">
+  <h1>Update Tasks</h1>
+</div>
+<div class = "container">
+  <%= form_for(@task) do |f| %>
+    <div class = "edit_form">
+      <div class="box">
+          <div class = "label"><%= f.label :title %></div>
+          <%= f.text_field :title %>
+      </div>
+      <div class = "box">
+          <div class = "label"><%= f.label :details %></div>
+          <%= f.text_field :details %>
+      </div>
+      <div class="box">
+      <div class = "label"><%= f.label :completed %></div>
+      <%= f.check_box :completed %>
+      </div>
+      <div class ="submit center-align" ><%= f.submit %></div>
+    </div>
+  <% end %>
+</div>
+
